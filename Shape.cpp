@@ -42,12 +42,6 @@ void Shape::moveShape(float dy, float dx) {
 	this->y = y + dy;
 }
 
-bool Shape::detectCollision(Shape rhs)
-{
-	moveShape(0, 0);
-	return false;
-}
-
 Shape::~Shape()
 {
 }

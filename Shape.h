@@ -1,4 +1,7 @@
 #pragma once
+class Square;
+class Circle;
+
 class Shape
 {
 public:
@@ -13,8 +16,9 @@ public:
 	void setY(float y);
 	void setSize(float size);
 	void moveShape(float dy, float dx);
-	virtual bool detectCollision(Shape rhs);
-	void ifCollision(Shape rhs);
+	virtual bool detectCollision(Square rhs);
+	virtual bool detectCollision(Circle rhs);
+	void ifCollision(Shape lhs, Shape rhs);
 	~Shape();
 protected:
 	float size;

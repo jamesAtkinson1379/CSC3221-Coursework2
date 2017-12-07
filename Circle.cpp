@@ -11,12 +11,16 @@ Circle::Circle(float x, float y, float size):
 
 
 
-bool Circle::detectCollision(Shape rhs)
+bool Circle::detectCollision(Circle rhs)
 {
 	moveShape(10, 0);
 	return false;
 }
-
+bool Circle::detectCollision(Square rhs)
+{
+	moveShape(10, 0);
+	return false;
+}
 
 
 Circle::~Circle()

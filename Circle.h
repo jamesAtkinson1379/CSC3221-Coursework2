@@ -1,15 +1,15 @@
 #pragma once
 #include "Shape.h"
-#include "Square.h"
+class Square;
 
-class Circle : public Shape
+class Circle : public virtual Shape
 {
 public:
 	Circle();
 	Circle(float x, float y, float size);
-	bool detectCollision(Shape rhs);
+	bool detectCollision(Circle rhs);
+	bool detectCollision(Square rhs);
 	~Circle();
-private:
-	float radius;
+
 };
 

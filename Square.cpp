@@ -9,7 +9,13 @@ Square::Square(float x, float y, float size) :
 {
 }
 
-bool Square::detectCollision(Shape rhs)
+bool Square::detectCollision(Circle rhs)
+{
+	moveShape(10, 0);
+	return false;
+}
+
+bool Square::detectCollision(Square rhs)
 {
 	moveShape(20, 0);
 	return false;

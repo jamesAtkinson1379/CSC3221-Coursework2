@@ -18,7 +18,7 @@ int main()
 	cout << "x : " << b.getX() << " y : " << b.getY() << endl;
 
 	a.detectCollision(a);
-	a.detectCollision(b);
+	a.detectCollision(a);
 	b.detectCollision(a);
 	b.detectCollision(b);
 
