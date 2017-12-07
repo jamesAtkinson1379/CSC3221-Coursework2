@@ -3,7 +3,7 @@
 
 Shape::Shape() {
 }
-Shape::Shape(float x, float y){
+Shape::Shape(float x, float y,float size){
 	setX(x);
 	setY(y);
 }
@@ -24,6 +24,9 @@ const float Shape::getX() {
 const float Shape::getY() {
 	return y;
 }
+const float Shape::getSize() {
+	return size;
+}
 
 void Shape::setX(float x) {
 	this->x = x;
@@ -31,7 +34,9 @@ void Shape::setX(float x) {
 void Shape::setY(float y) {
 	this->y = y;
 }
-
+void Shape::setSize(float size) {
+	this->size = size;
+}
 void Shape::moveShape(float dy, float dx) {
 	this->x = x + dx;
 	this->y = y + dy;

@@ -4,27 +4,10 @@
 
 Square::Square() {
 }
-Square::Square(float x, float y, float width, float height):
-	Shape(x,y)
+Square::Square(float x, float y, float size) :
+	Shape(x, y, size)
 {
-	setHeight(height);
-	setWidth(width);
 }
-
-const float Square::getWidth() {
-	return width;
-}
-const float Square::getHeight() {
-	return height;
-}
-
-void Square::setWidth(float newWidth) {
-	this->width = newWidth;
-}
-void Square::setHeight(float newHeight) {
-	this->height = newHeight;
-}
-
 
 bool Square::detectCollision(Shape rhs)
 {

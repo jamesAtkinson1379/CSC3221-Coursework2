@@ -1,10 +1,3 @@
-﻿  Circle.cpp
-  Generating Code...
-  Compiling...
-  Square.cpp
-  Game.cpp
+﻿  Game.cpp
 c:\users\james\source\repos\csc3221-project2\csc3221-project2\game.cpp(29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  Shape.cpp
   CSC3221-Project2.vcxproj -> C:\Users\james\source\repos\CSC3221-Project2\Debug\CSC3221-Project2.exe

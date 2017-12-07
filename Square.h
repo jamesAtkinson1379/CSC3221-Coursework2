@@ -6,11 +6,7 @@ class Square : public Shape
 {
 public:
 	Square();
-	Square(float x, float y, float width, float height);
-	const float getWidth();
-	const float getHeight();
-	void setWidth(float newWidth);
-	void setHeight(float newHeight);
+	Square(float x, float y, float size);
 	bool detectCollision(Shape rhs);
 	~Square();
 private:
