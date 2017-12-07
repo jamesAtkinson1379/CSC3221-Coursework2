@@ -13,14 +13,16 @@ int main()
 
 	Square a = Square(1, 1, 1);
 	Circle b = Circle(1, 1, 1);
+	Square c = Square(2, 2, 2);
+	Circle d = Circle(3, 3, 1);
 
 	cout << "x : " << a.getX() << " y : " << a.getY() << endl;
 	cout << "x : " << b.getX() << " y : " << b.getY() << endl;
 
-	a.detectCollision(a);
-	a.detectCollision(a);
-	b.detectCollision(a);
-	b.detectCollision(b);
+	//a.detectCollision(a);
+	//a.detectCollision(a);
+	//b.detectCollision(a);
+	b.detectCollision(d);
 
 	cout << "x : " << a.getX() << " y : " << a.getY() << endl;
 	cout << "x : " << b.getX() << " y : " << b.getY() << endl;
