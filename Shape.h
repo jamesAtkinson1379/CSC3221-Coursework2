@@ -21,6 +21,7 @@ public:
 	void ifCollision(Shape lhs, Shape rhs);
 	~Shape();
 protected:
+	float GRID_SIZE = 200;
 	float size;
 	float x;
 	float y;

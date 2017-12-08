@@ -35,17 +35,24 @@ const float Shape::getSize() {
 }
 
 void Shape::setX(float x) {
-	this->x = x;
+		this->x = x;
 }
 void Shape::setY(float y) {
-	this->y = y;
+		this->y = y;
 }
 void Shape::setSize(float size) {
-	this->size = size;
+	if (size > 0) {
+		this->size = size;
+	}
 }
+
 void Shape::moveShape(float dy, float dx) {
-	this->x = x + dx;
-	this->y = y + dy;
+	if (this->getX() + dx <= GRID_SIZE && this->getX() + dx >= 0) {
+		this->x = x + dx;
+	}
+	if (this->getY() + dy <= GRID_SIZE && this->getY() + dy >= 0) {
+		this->y = y + dy;
+	}
 }
 bool Shape::detectCollision(Square rhs)
 {

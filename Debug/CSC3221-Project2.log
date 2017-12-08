@@ -1,3 +1,9 @@
 ﻿  Game.cpp
-c:\users\james\source\repos\csc3221-project2\csc3221-project2\game.cpp(31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  CSC3221-Project2.vcxproj -> C:\Users\james\source\repos\CSC3221-Project2\Debug\CSC3221-Project2.exe
+c:\users\james\source\repos\csc3221-project2\csc3221-project2\game.cpp(19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\james\source\repos\csc3221-project2\csc3221-project2\game.cpp(29): warning C4018: '<': signed/unsigned mismatch
+c:\users\james\source\repos\csc3221-project2\csc3221-project2\game.cpp(33): warning C4018: '<': signed/unsigned mismatch
+c:\users\james\source\repos\csc3221-project2\csc3221-project2\game.cpp(35): warning C4018: '<': signed/unsigned mismatch
+c:\users\james\source\repos\csc3221-project2\csc3221-project2\game.cpp(37): error C2664: 'bool Shape::detectCollision(Circle)': cannot convert argument 1 from 'Shape' to 'Square'
+  c:\users\james\source\repos\csc3221-project2\csc3221-project2\game.cpp(37): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\james\source\repos\csc3221-project2\csc3221-project2\game.cpp(51): warning C4018: '<': signed/unsigned mismatch
+c:\users\james\source\repos\csc3221-project2\csc3221-project2\game.cpp(62): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
